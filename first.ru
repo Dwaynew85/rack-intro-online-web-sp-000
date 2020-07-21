@@ -1,6 +1,6 @@
 require 'rack'
 
-# Instances of Proc automatically have a call method that runs the block that 
+# Instances of Proc automatically have a call method that runs the block that
 # they're initialized with.
 
 my_server = Proc.new do
