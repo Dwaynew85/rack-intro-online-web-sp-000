@@ -1,9 +1,9 @@
-class MyServer 
+class MyServer
   def call(env)
     return [ 200, {'Content-Type' => 'text/html'}, pretty_response ]
-  end 
+  end
 
   def pretty_response
     (Time.now.to_i % 2).zero? ? ["Hello<em>World</em>"] : ["Hello<strong>You</strong>"]
-  end 
+  end
 end
